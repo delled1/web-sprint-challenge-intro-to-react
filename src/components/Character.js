@@ -1,29 +1,34 @@
 // Write your Character component here
 //ICE
 
-import React, { useState, useEffect} from 'react'
+import React, {useState} from 'react'
+import styled from 'styled-components'
+import CharInfo from "./Info"
 
-function Character ({char, index})  {
+const StyleDiv = styled.div`
+
+    background: black;
+    height: 25 vh;
+    margin: 0 auto;
+    width: 50vw;
+
+`
+
+const StyleH2 = styled.h2`
+
+    font-size: 3rem;
+    text-shadow: 2px 2px 2px grey;
+    color: yellow
+`
+
+
+function Character ({char})  {
 
     return(
-        <div>
-            <h2>{char.name}</h2>
-            <p>
-                Birth Year: {char.birth_year}
-                <br></br>
-                Gender: {char.gender}
-                <br></br>
-                Height: {char.height}
-                <br></br>
-                Mass: {char.mass}
-                <br></br>
-                Eye Color: {char.eye_color}
-                <br></br>
-                Hair Color: {char.hair_color}
-                <br></br>
-                Skin Color: {char.skin_color}
-            </p>
-        </div>
+        <StyleDiv>
+            <StyleH2>{char.name}</StyleH2>
+            <CharInfo char={char}/>
+        </StyleDiv>
     )
 
 
