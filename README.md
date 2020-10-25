@@ -30,11 +30,19 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. What is React JS and what problems does it solve? Support your answer with concepts introduced in class and from your personal research on the web.
 
+Library made by the devs at Facebook for building UIs. Uses virtual DOM. Uses JSX for easier design
+
 1. Describe component state.
+
+How the component is rendered and behaves. Can make components dynamic and interactive
 
 1. Describe props.
 
+Data passed down to children
+
 1. What are side effects, and how do you sync effects in a React component to changes of certain state or props?
+
+Anything that effects outside the scope of the current function
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
